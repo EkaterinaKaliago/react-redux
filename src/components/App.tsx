@@ -1,12 +1,12 @@
 import React from 'react';
-import {Provider} from 'react-redux';
-import {store} from '../state';
+import { Provider } from 'react-redux';
+import { store } from '../state';
 import RepositoriesList from './RepositoriesList';
 
 
 const App = () => {
   return <Provider store={store}>
-    <div>
+    <div className="app">
       <h1>Search for a Package</h1>
       <RepositoriesList />
     </div>
